@@ -15,7 +15,7 @@ function App() {
   }, [setGames, setLoading]);
 
   const getGames = async () => {
-    const url = "https://api.twitch.tv/helix/games/top?first=10";
+    const url = "https://api.twitch.tv/helix/games/top?first=100";
     const dataGames = await fetch(url, {
       method: "GET",
       headers: {
@@ -32,7 +32,7 @@ function App() {
     });
     setGames(games.data);
     setLoading(false);
-    setTitle(" Our top 10 games on Twitch");
+    setTitle(" Our top 100 games on Twitch");
   };
 
   return (

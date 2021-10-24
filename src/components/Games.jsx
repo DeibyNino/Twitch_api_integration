@@ -6,8 +6,6 @@ import VideogameAssetOffIcon from "@mui/icons-material/VideogameAssetOff";
 import CardGame from "./CardGame";
 
 const Games = ({ games, loading, title }) => {
-  console.log(games);
-
   return loading ? (
     <Box className="loading">
       <CircularProgress color="secondary" />

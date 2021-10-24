@@ -38,7 +38,7 @@ const Search = ({ setLoading, games, setGames, setTitle }) => {
     }
     setLoading(false);
     setSearchError(false);
-    setTitle(`Better results from ${searchValue.toUpperCase()}`);
+    setTitle(`Better results for ${searchValue.toUpperCase()}`);
   };
 
   return (
